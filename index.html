@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Bossa Nova Night — Invitation</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Intro stage -->
+<section id="intro" aria-labelledby="event-title">
+  <div class="notes" id="notesLayer" aria-hidden="true"></div>
+  <div class="curtain left" aria-hidden="true"></div>
+  <div class="curtain right" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <div style="text-align:center; z-index:8;">
+    <h3 class="event-detail-text">Event Details</h3>
+    <h1 id="event-title" class="event-title">Bossa Nova Night</h1>
+    <h2 class="event-detail-text">Sabtu, 4 Oktober 2025</h2>
+    <h2 class="event-detail-text">Homestay Bukit Gasing, 77, Jalan 5/49, Bukit Gasing, 46000 Petaling Jaya, Selangor</h2>
+</div>
+
+  <div class="intro-vignette" aria-hidden="true"></div>
+</section>
+
+<!-- Main content -->
+<main id="details" role="main">
+
+  <!-- Event Details -->
+  <section class="section" id="sec-details">
+
+    <div class="text">
+      <h3>Dress Code</h3>
+      <ul>
+        <li>Gentlemen: Suit up (elakkan warna hijau)</li>
+        <li>Ladies: Dress Glam (elakkan warna putih)</li>
+      </ul>
+
+      <h3 style="margin-top: 20px;">Color Palette</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px;">
+        
+        <div style="flex: 1 1 calc(50% - 5px); display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 60px; height: 60px; background-color: #A48B69; border-radius: 8px; margin-bottom: 5px;"></div>
+        </div>
+        <div style="flex: 1 1 calc(50% - 5px); display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 60px; height: 60px; background-color: #646E56; border-radius: 8px; margin-bottom: 5px;"></div>
+        </div>
+        <div style="flex: 1 1 calc(50% - 5px); display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 60px; height: 60px; background-color: #B7502E; border-radius: 8px; margin-bottom: 5px;"></div>
+        </div>
+        <div style="flex: 1 1 calc(50% - 5px); display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 60px; height: 60px; background-color: #8A5D3E; border-radius: 8px; margin-bottom: 5px;"></div>
+        </div>
+        <div style="flex: 1 1 calc(50% - 5px); display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 60px; height: 60px; background-color: #1A311F; border-radius: 8px; margin-bottom: 5px;"></div>
+        </div>
+        <div style="flex: 1 1 calc(50% - 5px); display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 60px; height: 60px; background-color: #632C28; border-radius: 8px; margin-bottom: 5px;"></div>
+        </div>
+      </div>
+
+      <div class="text" style="margin-top: 5%;">
+              <h3>Menu Highlights</h3>
+      <p> Kuih(high-tea)• Pizza • BBQ</p>
+      </div>
+      
+      <div class="text" style="margin-top: 5%;">
+              <h3>Parking</h3>
+      <p>Tanda akan diletakkan untuk panduan — sila parkir di tepi jalan.</p>
+        </div>
+
+
+    </div>
+  </section>
+
+  
+
+    <!-- Atur Cara -->
+  <section class="section" id="sec-agenda">
+    <div class="info">
+      
+      <div class="text">
+        <h2> Atur Cara Malam</h2>
+      </div>
+    </div>
+    <ul style="list-style: none; padding-left: 0; width: 100%;">
+      <li><strong>5:30 PM</strong>  Ketibaan Tetamu / Evening Tea</li>
+      <li><strong>6:15 PM</strong>  Ketibaan Pengantin</li>
+      <li><strong>6:30 PM</strong>  Icebreaking Game</li>
+      <li><strong>6:50 PM</strong>  Ucapan</li>
+      <li><strong>7:07 PM</strong>  Maghrib / Bufet Dibuka</li>
+      <li><strong>8:30 PM</strong>  Persembahan Saxophone / Dancefloor Dibuka</li>
+      <li><strong>9:00 PM</strong>  Karaoke Room Dibuka</li>
+      <li><strong>10:00 PM</strong>  Bersurai</li>
+    </ul>
+  </section>
+
+
+  <div class="divider" aria-hidden="true">
+    <span class="note-pill" style="text-align: center;"> We can’t wait to celebrate this night with you! </span>
+  </div>
+
+</main>
+
+<!-- Vinyl Button -->
+<button type="button" class="vinyl" id="musicToggle"><img src="assets/img/vinyl.png" alt="vinyl record" /></button>
+
+<audio id="bgAudio" loop preload="auto">
+  <source src="/assets/httyd.mp3" type="audio/mpeg">
+</audio>
+
+  <nav class="bottom-bar">
+    <button type="button" class="bottom-bar-item" data-modal-target="modal-contact-content">
+      <img src="/assets/icon/phone-call.webp" alt="Phone">
+      <span>Hubungi</span>
+    </button>
+    <button type="button" class="bottom-bar-item" data-modal-target="modal-rsvp-content">
+      <img src="/assets/icon/mail.png" alt="RSVP">
+      <span>RSVP</span>
+    </button>
+    <button type="button" class="bottom-bar-item" data-modal-target="modal-location-content">
+      <img src="/assets/icon/location.png" alt="Location">
+      <span>Lokasi</span>
+    </button>
+  </nav>
+
+  
+    <!-- Simple Modal Structure -->
+  
+  <!-- Hidden Modal Content Sources -->
+  <div id="modal-rsvp-content" style="display: none;">
+    <div class="popup-title-container">
+      <h2 class="popup-title">RSVP</h2>
+    </div>
+    <div class="info">
+      <div class="text">
+        
+      </div>
+    </div>
+
+    <form id="rsvpForm">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="hadir">Adakah anda akan hadir?</label>
+      <select id="hadir" name="hadir" required>
+        <option value="">Pilih</option>
+        <option value="Ya">Ya</option>
+        <option value="Tidak">Tidak</option>
+      </select>
+
+      <label for="bilangan">Bilangan Kehadiran (1–5):</label>
+      <input type="number" id="bilangan" name="bilangan" min="1" max="5" required>
+
+      <label for="ucapan">Ucapan (max 20 perkataan):</label>
+      <textarea id="ucapan" name="ucapan" maxlength="200"></textarea>
+
+      <button type="submit" class="btn">Hantar RSVP</button>
+    </form>
+    <div id="rsvpConfirmationMessage" style="text-align: center; margin-top: 20px; padding: 10px; background-color: #e6ffe6; border: 1px solid #a3e6a3; border-radius: 5px; display: none;">
+      Terima kasih atas RSVP anda!
+    </div>
+  </div>
+
+  <div id="modal-contact-content" style="display: none;">
+    <div class="popup-title-container">
+      <h2 class="popup-title">Contact</h2>
+    </div>
+    <div class="info">
+      <div class="text">
+      </div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <div>
+        <p style="margin: 0;"><strong>Shukli bin Suban @ Ani</strong></p>
+        <p style="margin: 0; font-size: 0.9em; color: #555;">Bapa Pengantin Lelaki</p>
+      </div>
+      <div>
+        <a href="https://wa.me/660123456789" target="_blank"><img src="/assets/icon/whatsapp.png" alt="WhatsApp" style="width: 32px; height: 32px;"></a>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <div>
+        <p style="margin: 0;"><strong>Elfy Dayana binti Taib</strong></p>
+        <p style="margin: 0; font-size: 0.9em; color: #555;">Ibu Pengantin Lelaki</p>
+      </div>
+      <div>
+        <a href="https://wa.me/660123456789" target="_blank"><img src="/assets/icon/whatsapp.png" alt="WhatsApp" style="width: 32px; height: 32px;"></a>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <div>
+        <p style="margin: 0;"><strong>Shazman bin Abdul Halim</strong></p>
+        <p style="margin: 0; font-size: 0.9em; color: #555;">Bapa Pengantin Perempuan</p>
+      </div>
+      <div>
+        <a href="https://wa.me/660123456789" target="_blank"><img src="/assets/icon/whatsapp.png" alt="WhatsApp" style="width: 32px; height: 32px;"></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-location-content" style="display: none;">
+    <div class="popup-title-container">
+      <h2 class="popup-title">Lokasi</h2>
+    </div>
+    <div class="info">
+      <div class="text" style="text-align: center;">
+        <p>Homestay Bukit Gasing<br>77, Jalan 5/49, Bukit Gasing,<br>46000 Petaling Jaya, Selangor</p>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <a href="https://www.google.com/maps?q=Homestay+Bukit+Gasing,the+77,+Jalan+5/49,+Bukit+Gasing,+46000+Petaling+Jaya,+Selangor" target="_blank" class="btn">Google Maps</a>  
+      <a href="https://waze.com/ul?q=Homestay+Bukit+Gasing,+77,+Jalan+5/49,+Bukit+Gasing,+46000+Petaling+Jaya,+Selangor" target="_blank" class="btn">Waze</a>
+    </div>
+  </div>
+
+  <!-- Simple Modal Structure -->
+  <div id="simpleModal" class="simple-modal">
+    <div class="simple-modal-content">
+      <span class="simple-close-button">&times;</span>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
