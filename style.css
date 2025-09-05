@@ -405,7 +405,7 @@ main{
   z-index: 999; /* Ensure it's above other content */
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  border-top: 1px solid var(--velvet);
+  border-top: 1px solid var(--velvet) ;
 }
 
 .bottom-bar-item {
@@ -588,6 +588,28 @@ main{
   border-bottom: 1px solid var(--velvet);
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+#fullScreenOverlayText {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  opacity: 1; /* Visible initially */
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  visibility: visible;
+}
+
+.hidden {
+  opacity: 0 !important;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 #fullScreenOverlayText {

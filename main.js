@@ -206,4 +206,29 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('click', (event) => {
     if (event.target === simpleModal) closeModal();
   });
+
+  // Fetch and display Kehadiran sum
+  const kehadiranSumElement = document.getElementById('kehadiranSum');
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyxJSt_I0NjFVka7cmYzdY00cSVV79V3BOxtkBDtYmyInLqzz8n-tKmRAOgKIxMcwVD/exec';
+
+  if (kehadiranSumElement) {
+    fetch(scriptURL)
+      .then(response => response.json())
+      .then(data => {
+        let totalKehadiran = 0;
+        // Assuming data is an array of objects, and each object has a 'kehadiran' property
+        if (Array.isArray(data)) {
+          data.forEach(row => {
+            if (typeof row['bilangan'] === 'number') {
+              totalKehadiran += row['bilangan'];
+            }
+          });
+        }
+        kehadiranSumElement.textContent = `${totalKehadiran}`;
+      })
+      .catch(error => {
+        console.error('Error fetching kehadiran data:', error);
+        kehadiranSumElement.textContent = 'Could not load kehadiran data.';
+      });
+  }
 });
