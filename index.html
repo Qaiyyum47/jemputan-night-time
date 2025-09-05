@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Bossa Nova Night — Invitation</title>
+<title>Bossa Nova Night — Jemputan</title>
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -21,9 +21,9 @@
   <div class="spotlight" aria-hidden="true"></div>
 
   <div style="text-align:center; z-index:8;">
-    <h3 class="event-detail-text">Event Details</h3>
+    <!-- <h3 class="event-detail-text">Event</h3> -->
     <h1 id="event-title" class="event-title">Bossa Nova Night</h1>
-    <h2 class="event-detail-text">Sabtu, 4 Oktober 2025</h2>
+    <h2 class="event-detail-text">Sabtu, Oktober 4, 2025</h2>
     <h2 class="event-detail-text">Homestay Bukit Gasing, 77, Jalan 5/49, Bukit Gasing, 46000 Petaling Jaya, Selangor</h2>
 </div>
 
@@ -37,10 +37,10 @@
   <section class="section" id="sec-details">
 
     <div class="text">
-      <h3>Dress Code</h3>
+      <h3>👕 Dress Code</h3>
       <ul>
-        <li>Gentlemen: Suit up (elakkan warna hijau)</li>
-        <li>Ladies: Dress Glam (elakkan warna putih)</li>
+        <li><strong>Gentlemen</strong>: Suit up <br>(avoid green)</li>
+        <li><strong>Ladies</strong>: Dress Glam <br>(avoid white)</li>
       </ul>
 
       <h3 style="margin-top: 20px;">Color Palette</h3>
@@ -67,13 +67,13 @@
       </div>
 
       <div class="text" style="margin-top: 5%;">
-              <h3>Menu Highlights</h3>
-      <p> Kuih(high-tea)• Pizza • BBQ</p>
+              <h3>🍽️ Menu Highlights</h3>
+      <p> 🥮 Kuih(high-tea) • 🍕 Pizza • 🍖 BBQ </p>
       </div>
       
       <div class="text" style="margin-top: 5%;">
               <h3>Parking</h3>
-      <p>Tanda akan diletakkan untuk panduan — sila parkir di tepi jalan.</p>
+      <p>Signs will be placed for guidance — please park by the roadside.</p>
         </div>
 
 
@@ -84,27 +84,29 @@
 
     <!-- Atur Cara -->
   <section class="section" id="sec-agenda">
+    <div class="agenda-content-wrapper">
     <div class="info">
       
       <div class="text">
-        <h2> Atur Cara Malam</h2>
+        <h2> 🕰️ Tentative Schedule</h2>
       </div>
     </div>
-    <ul style="list-style: none; padding-left: 0; width: 100%;">
-      <li><strong>5:30 PM</strong>  Ketibaan Tetamu / Evening Tea</li>
-      <li><strong>6:15 PM</strong>  Ketibaan Pengantin</li>
-      <li><strong>6:30 PM</strong>  Icebreaking Game</li>
-      <li><strong>6:50 PM</strong>  Ucapan</li>
-      <li><strong>7:07 PM</strong>  Maghrib / Bufet Dibuka</li>
-      <li><strong>8:30 PM</strong>  Persembahan Saxophone / Dancefloor Dibuka</li>
-      <li><strong>9:00 PM</strong>  Karaoke Room Dibuka</li>
-      <li><strong>10:00 PM</strong>  Bersurai</li>
+    <ul>
+      <li><strong>5:30 PM</strong> Guest Arrival / Evening Tea</li>
+      <li><strong>6:15 PM</strong>  Arrival of the Couple 👰</li>
+      <li><strong>6:30 PM</strong>  Icebreaking Game 🎲</li>
+      <li><strong>6:50 PM</strong>  Speech 🎤</li>
+      <li><strong>7:07 PM</strong> Maghrib / Buffet Opens 🍽️</li>
+      <li><strong>8:30 PM</strong>  Saxophone Performance 🎷 / Dancefloor Opens 🕺</li>
+      <li><strong>9:00 PM</strong>  Karaoke Room Opens 🎤</li>
+      <li><strong>10:00 PM</strong> Bersurai</li>
     </ul>
+    </div>
   </section>
 
 
   <div class="divider" aria-hidden="true">
-    <span class="note-pill" style="text-align: center;"> We can’t wait to celebrate this night with you! </span>
+    <span class="note-pill" style="text-align: center;"> We can’t wait to celebrate this night with you! ✨ </span>
   </div>
 
 </main>
@@ -113,13 +115,13 @@
 <button type="button" class="vinyl" id="musicToggle"><img src="assets/img/vinyl.png" alt="vinyl record" /></button>
 
 <audio id="bgAudio" loop preload="auto">
-  <source src="/assets/httyd.mp3" type="audio/mpeg">
+  <source src="/assets/bossa-nova.mp3" type="audio/mpeg">
 </audio>
 
   <nav class="bottom-bar">
     <button type="button" class="bottom-bar-item" data-modal-target="modal-contact-content">
       <img src="/assets/icon/phone-call.webp" alt="Phone">
-      <span>Hubungi</span>
+      <span>Contact</span>
     </button>
     <button type="button" class="bottom-bar-item" data-modal-target="modal-rsvp-content">
       <img src="/assets/icon/mail.png" alt="RSVP">
@@ -127,7 +129,7 @@
     </button>
     <button type="button" class="bottom-bar-item" data-modal-target="modal-location-content">
       <img src="/assets/icon/location.png" alt="Location">
-      <span>Lokasi</span>
+      <span>Location</span>
     </button>
   </nav>
 
@@ -137,7 +139,7 @@
   <!-- Hidden Modal Content Sources -->
   <div id="modal-rsvp-content" style="display: none;">
     <div class="popup-title-container">
-      <h2 class="popup-title">RSVP</h2>
+      <h2 class="popup-title"> RSVP 📝</h2>
     </div>
     <div class="info">
       <div class="text">
@@ -145,33 +147,51 @@
       </div>
     </div>
 
-    <form id="rsvpForm">
-      <label for="nama">Nama:</label>
-      <input type="text" id="nama" name="nama" required>
-
-      <label for="hadir">Adakah anda akan hadir?</label>
-      <select id="hadir" name="hadir" required>
-        <option value="">Pilih</option>
-        <option value="Ya">Ya</option>
-        <option value="Tidak">Tidak</option>
-      </select>
-
-      <label for="bilangan">Bilangan Kehadiran (1–5):</label>
-      <input type="number" id="bilangan" name="bilangan" min="1" max="5" required>
-
-      <label for="ucapan">Ucapan (max 20 perkataan):</label>
-      <textarea id="ucapan" name="ucapan" maxlength="200"></textarea>
-
-      <button type="submit" class="btn">Hantar RSVP</button>
-    </form>
-    <div id="rsvpConfirmationMessage" style="text-align: center; margin-top: 20px; padding: 10px; background-color: #e6ffe6; border: 1px solid #a3e6a3; border-radius: 5px; display: none;">
-      Terima kasih atas RSVP anda!
+<form id="rsvp-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfcUVx97NWmPHWNdAH88ckcygxY2fnyps574RFfC_e8XpwApA/formResponse" method="POST">
+  <!-- Step 1: Yes/No -->
+  <div id="rsvp-initial-step">
+    <label for="hadir">Will you be attending?</label>
+    <div id="rsvp-buttons">
+      <button type="button" id="rsvp-yes" class="btn">Yes</button>
+      <button type="button" id="rsvp-no" class="btn">No</button>
     </div>
+  </div>
+
+  <!-- Step 2: Details -->
+  <div id="rsvp-details-step" style="display: none;">
+    <!-- Hidden select for Ya/Tidak -->
+    <select id="hadir" name="entry.1212652195" required style="display:none;">
+      <option value=""></option>
+      <option value="Ya">Yes</option>
+      <option value="Tidak">No</option>
+    </select>
+
+    <div class="form-group">
+      <label for="nama">Name:</label>
+      <input type="text" id="nama" name="entry.1440212509" placeholder="Your Name" required>
+    </div>
+
+    <div class="form-group" id="bilangan-kehadiran-group">
+      <label for="bilangan">Number of Attendees:</label>
+      <input type="number" id="bilangan" name="entry.1811924995" min="0" max="5" placeholder="Select amount" required>
+    </div>
+
+    
+
+    <button type="submit" class="btn rsvp-submit-btn">Send</button>
+  </div>
+</form>
+
+<!-- Success message -->
+<div id="rsvp-success" style="display:none; text-align:center; margin-top:20px; padding:10px; background:#e6ffe6; border:1px solid #a3e6a3; border-radius:5px;">
+  Thank you for your RSVP!
+</div>
+
   </div>
 
   <div id="modal-contact-content" style="display: none;">
     <div class="popup-title-container">
-      <h2 class="popup-title">Contact</h2>
+      <h2 class="popup-title"> Contact 📞</h2>
     </div>
     <div class="info">
       <div class="text">
@@ -208,9 +228,9 @@
 
   <div id="modal-location-content" style="display: none;">
     <div class="popup-title-container">
-      <h2 class="popup-title">Lokasi</h2>
+      <h2 class="popup-title"> Location 📍</h2>
     </div>
-    <div class="info">
+    <div class="info" style="align-items: center; text-align: center;">
       <div class="text" style="text-align: center;">
         <p>Homestay Bukit Gasing<br>77, Jalan 5/49, Bukit Gasing,<br>46000 Petaling Jaya, Selangor</p>
       </div>
