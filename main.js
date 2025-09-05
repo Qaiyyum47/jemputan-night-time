@@ -53,6 +53,7 @@ window.addEventListener('scroll', () => {
 const bgAudio = document.getElementById('bgAudio');
 const musicToggle = document.getElementById('musicToggle');
 const vinylImage = musicToggle.querySelector('img');
+const fullScreenOverlayText = document.getElementById('fullScreenOverlayText');
 let musicPlaying = false;
 let initialPlayDone = false;
 
@@ -63,6 +64,7 @@ if (musicToggle && bgAudio) {
         await bgAudio.play();
         musicPlaying = true;
         musicToggle.setAttribute('aria-pressed', 'true');
+        vinylImage.style.animation = 'spin 7s linear infinite';
         vinylImage.style.animation = 'spin 7s linear infinite';
         vinylImage.style.animationPlayState = 'running';
         if (!initialPlayDone) {
@@ -82,6 +84,11 @@ if (musicToggle && bgAudio) {
         const eventDetailTexts = document.querySelectorAll('.event-detail-text');
         if (eventTitle) eventTitle.classList.add('title-animate');
         eventDetailTexts.forEach(el => el.classList.add('event-detail-text-animate'));
+
+        document.querySelector('.event-actions').classList.add('event-detail-text-animate');
+        if (fullScreenOverlayText) {
+          fullScreenOverlayText.classList.add('hidden');
+        }
 
         autoScrollTimeout = setTimeout(() => {
           smoothScrollTo(document.documentElement.scrollHeight - window.innerHeight, 30000);

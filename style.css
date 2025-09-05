@@ -1,6 +1,6 @@
 :root{
   --velvet:#5C1D1D;
-  --amber:#A04A27;
+  --amber:#FFD54F;
   --cream:#ebdccb;
   --olive:#919385;
   --bg:#f9f5f2;
@@ -12,7 +12,7 @@
 html,body{height:100%}
 body{
   margin:0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: linear-gradient(180deg, var(--bg) 0%, var(--olive) 100%);
   color:#222;
   -webkit-font-smoothing:antialiased;
@@ -20,6 +20,7 @@ body{
   overflow-x:hidden;
   -webkit-tap-highlight-color: transparent;
   text-align:center;
+  font-size: 0.85rem;
 }
 
 p, ul, li, button, label, input {
@@ -107,7 +108,7 @@ img{display:block;max-width:100%}
   z-index:6;
   color:var(--amber);
   font-family: 'Great Vibes', cursive;
-  font-size: clamp(2.2rem, 7vw, 3.2rem);
+  font-size: clamp(2.8rem, 9vw, 4.0rem);
   letter-spacing:0.6px;
   text-shadow: 0 6px 18px rgba(0,0,0,0.55);
   opacity:0;
@@ -137,9 +138,15 @@ img{display:block;max-width:100%}
   transform:translateY(8px);
   text-align:center;
   padding: 0 20px; /* Add some padding for better appearance */
+  font-family: 'Montserrat', sans-serif;
 }
 .event-detail-text-animate { animation: fadeInText 0.9s ease-out 3.5s forwards; }
 @keyframes fadeInText{ to{ opacity:1; transform:none } }
+
+h2.event-detail-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+}
 
 /* subtle grain / vignette */
 .intro-vignette{
@@ -183,8 +190,8 @@ main{
 }
 .info.visible{ opacity:1; transform:none; }
 
-.text h2{ margin:0; font-weight:600; color:var(--velvet); font-size:1.5em; }
-.text h3{ margin:0; font-weight:600; color:var(--velvet); font-size:1.2em; }
+.text h2{ margin:0; font-weight:600; color:var(--velvet); font-size:1.8em; }
+.text h3{ margin:0; font-weight:600; color:var(--velvet); font-size:1.2em; font-family: 'Lato', sans-serif; }
 .text p{ margin:6px 0 0; color:#222; font-size:0.85em; line-height:1.4; }
 
 /* RSVP */
@@ -246,6 +253,23 @@ main{
     font-size: 16px;
 }
 
+.event-actions {
+  text-align:center; 
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.event-action-btn {
+  padding: 4px 4px;
+  font-size: 0.8rem;
+  display: block;
+  margin: 5px auto;
+  max-width: 120px;
+  border-radius: 5px;
+  background-color: var(--cream);
+}
+
 
 
 .response-message {
@@ -280,7 +304,6 @@ main{
 /* parallax music notes */
 .notes{
   position:absolute; pointer-events:none; inset:0; z-index:2;
-  background-image: url('/assets/notes.svg');
   background-repeat:repeat;
   opacity:0.06;
   transform: translateY(0);
@@ -382,6 +405,7 @@ main{
   z-index: 999; /* Ensure it's above other content */
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  border-top: 1px solid var(--velvet);
 }
 
 .bottom-bar-item {
@@ -548,3 +572,44 @@ main{
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.homestay-img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Makes it square */
+  object-fit: cover; /* Ensures image covers the area, effectively "zooming" */
+  object-position: 50% 50%; /* Adjust to zoom into different parts of the image */
+  display: block;
+  margin-top: 20px;
+  border-radius: 15px; /* Rounded corners */
+}
+
+.contact-entry-bordered {
+  border-top: 1px solid var(--velvet);
+  border-bottom: 1px solid var(--velvet);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#fullScreenOverlayText {
+  position: fixed;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  width: 100%;
+  transition: opacity 0.5s ease-out;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+
+
+

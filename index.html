@@ -6,12 +6,13 @@
 <title>Bossa Nova Night — Jemputan</title>
 
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Lato&family=Lora&family=Montserrat:wght@300;400;600;700&family=Playfair+Display&family=Sacramento&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+<div id="fullScreenOverlayText">Tekan Sini</div>
 
 <!-- Intro stage -->
 <section id="intro" aria-labelledby="event-title">
@@ -21,10 +22,15 @@
   <div class="spotlight" aria-hidden="true"></div>
 
   <div style="text-align:center; z-index:8;">
-    <!-- <h3 class="event-detail-text">Event</h3> -->
+    <h3 class="event-detail-text">Jemputan</h3>
     <h1 id="event-title" class="event-title">Bossa Nova Night</h1>
     <h2 class="event-detail-text">Sabtu, Oktober 4, 2025</h2>
     <h2 class="event-detail-text">Homestay Bukit Gasing, 77, Jalan 5/49, Bukit Gasing, 46000 Petaling Jaya, Selangor</h2>
+
+<div class="event-actions" style="text-align:center; margin-top: 20px;">
+  <button type="button" class="btn event-action-btn" data-modal-target="modal-rsvp-content">RSVP</button>
+  <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bossa%20Nova%20Night&dates=20251004T173000/20251004T220000&details=Bossa%20Nova%20Night%20-%20Evening%20of%20music%20and%20celebration.&location=Homestay%20Bukit%20Gasing,%2077,%20Jalan%205/49,%20Bukit%20Gasing,%2046000%20Petaling%20Jaya,%20Selangor&sf=true&output=xml" target="_blank" class="btn event-action-btn">Calendar</a>
+</div>
 </div>
 
   <div class="intro-vignette" aria-hidden="true"></div>
@@ -76,6 +82,8 @@
       <p>Signs will be placed for guidance — please park by the roadside.</p>
         </div>
 
+      <img src="assets/img/homestay.jpeg" alt="Homestay Image" class="homestay-img">
+
 
     </div>
   </section>
@@ -93,10 +101,10 @@
     </div>
     <ul>
       <li><strong>5:30 PM</strong> Guest Arrival / Evening Tea</li>
-      <li><strong>6:15 PM</strong>  Arrival of the Couple 👰</li>
+      <li><strong>6:15 PM</strong>  Arrival of the Bride & Groom 🦢</li>
       <li><strong>6:30 PM</strong>  Icebreaking Game 🎲</li>
       <li><strong>6:50 PM</strong>  Speech 🎤</li>
-      <li><strong>7:07 PM</strong> Maghrib / Buffet Opens 🍽️</li>
+      <li><strong>7:07 PM</strong> Maghrib / Open Buffet 🍽️</li>
       <li><strong>8:30 PM</strong>  Saxophone Performance 🎷 / Dancefloor Opens 🕺</li>
       <li><strong>9:00 PM</strong>  Karaoke Room Opens 🎤</li>
       <li><strong>10:00 PM</strong> Bersurai</li>
@@ -173,7 +181,7 @@
 
     <div class="form-group" id="bilangan-kehadiran-group">
       <label for="bilangan">Number of Attendees:</label>
-      <input type="number" id="bilangan" name="entry.1811924995" min="0" max="5" placeholder="Select amount" required>
+      <input type="number" id="bilangan" name="entry.1811924995" min="0" max="10" placeholder="Type amount" required>
     </div>
 
     
@@ -206,7 +214,7 @@
         <a href="https://wa.me/660123456789" target="_blank"><img src="/assets/icon/whatsapp.png" alt="WhatsApp" style="width: 32px; height: 32px;"></a>
       </div>
     </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+    <div class="contact-entry-bordered" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
       <div>
         <p style="margin: 0;"><strong>Elfy Dayana binti Taib</strong></p>
         <p style="margin: 0; font-size: 0.9em; color: #555;">Ibu Pengantin Lelaki</p>
