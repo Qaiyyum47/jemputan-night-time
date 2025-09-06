@@ -406,7 +406,7 @@ form textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 16px;
+  padding: 10px 16px;
   border: 1px solid;
   border-radius: 6px;
   background: white;
@@ -712,7 +712,7 @@ form textarea {
 .bottom-right-bg {
   position: absolute;
   bottom: 0;
-  right: -120px;
+  right: -100px;
   width: 60%;
   opacity: 0.8;
   pointer-events: none;
@@ -743,7 +743,7 @@ form textarea {
 .custom-bottom-left-bg {
   position: absolute;
   bottom: 0.01;
-  left: -150px;
+  left: -100px;
   width: 60%;
   opacity: 0.8;
   pointer-events: none;
