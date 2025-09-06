@@ -1,267 +1,344 @@
 <!DOCTYPE html>
-<html lang="ms">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Bossa Nova Night — Jemputan</title>
+<html lang="ms" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jemputan Nikah Celebration | Syafiq & Rose Aidatul</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/color.css" />
+    <script src="js/script.js" defer></script>
+  </head>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Lato&family=Lora&family=Montserrat:wght@300;400;600;700&family=Playfair+Display&family=Sacramento&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-<div id="fullScreenOverlayText">Tekan Sini</div>
-
-<!-- Intro stage -->
-<section id="intro" aria-labelledby="event-title">
-  <div class="notes" id="notesLayer" aria-hidden="true"></div>
-  <div class="curtain left" aria-hidden="true"></div>
-  <div class="curtain right" aria-hidden="true"></div>
-  <div class="spotlight" aria-hidden="true"></div>
-
-  <div style="text-align:center; z-index:8;">
-    <h3 class="event-detail-text">Jemputan</h3>
-    <h1 id="event-title" class="event-title">Bossa Nova Night</h1>
-    <h2 class="event-detail-text">Sabtu, Oktober 4, 2025</h2>
-    <h2 class="event-detail-text">Homestay Bukit Gasing, 77, Jalan 5/49, Bukit Gasing, 46000 Petaling Jaya, Selangor</h2>
-
-<div class="event-actions" style="text-align:center; margin-top: 20px;">
-  <button type="button" class="btn event-action-btn" data-modal-target="modal-rsvp-content">RSVP</button>
-  <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bossa%20Nova%20Night&dates=20251004T173000/20251004T220000&details=Bossa%20Nova%20Night%20-%20Evening%20of%20music%20and%20celebration.&location=Homestay%20Bukit%20Gasing,%2077,%20Jalan%205/49,%20Bukit%20Gasing,%2046000%20Petaling%20Jaya,%20Selangor&sf=true&output=xml" target="_blank" class="btn event-action-btn">Calendar</a>
-</div>
-</div>
-
-  <div class="intro-vignette" aria-hidden="true"></div>
-</section>
-
-<!-- Main content -->
-<main id="details" role="main">
-
-  <!-- Event Details -->
-  <section class="section" id="sec-details">
-
-    <div class="text">
-      <h3>👕 Dress Code</h3>
-      <ul>
-        <li><strong>Gentlemen</strong>: Suit up <br>(avoid green)</li>
-        <li><strong>Ladies</strong>: Dress Glam <br>(avoid white)</li>
-      </ul>
-
-      <h3 style="margin-top: 20px;">Color Palette</h3>
-      <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px;">
-        
-        <div style="flex: 1 1 calc(50% - 5px); display: flex; flex-direction: column; align-items: center; text-align: center;">
-          <div style="width: 60px; height: 60px; background-color: #A48B69; border-radius: 8px; margin-bottom: 5px;"></div>
-        </div>
-        <div style="flex: 1 1 calc(50% - 5px); display: flex; flex-direction: column; align-items: center; text-align: center;">
-          <div style="width: 60px; height: 60px; background-color: #646E56; border-radius: 8px; margin-bottom: 5px;"></div>
-        </div>
-        <div style="flex: 1 1 calc(50% - 5px); display: flex; flex-direction: column; align-items: center; text-align: center;">
-          <div style="width: 60px; height: 60px; background-color: #B7502E; border-radius: 8px; margin-bottom: 5px;"></div>
-        </div>
-        <div style="flex: 1 1 calc(50% - 5px); display: flex; flex-direction: column; align-items: center; text-align: center;">
-          <div style="width: 60px; height: 60px; background-color: #8A5D3E; border-radius: 8px; margin-bottom: 5px;"></div>
-        </div>
-        <div style="flex: 1 1 calc(50% - 5px); display: flex; flex-direction: column; align-items: center; text-align: center;">
-          <div style="width: 60px; height: 60px; background-color: #1A311F; border-radius: 8px; margin-bottom: 5px;"></div>
-        </div>
-        <div style="flex: 1 1 calc(50% - 5px); display: flex; flex-direction: column; align-items: center; text-align: center;">
-          <div style="width: 60px; height: 60px; background-color: #632C28; border-radius: 8px; margin-bottom: 5px;"></div>
-        </div>
-      </div>
-
-      <div class="text" style="margin-top: 5%;">
-        <h3>🫂 Bilangan Kehadiran</h3>
-        <div id="kehadiranSum" style="text-align: center; margin-top: 10px; font-weight: bold;"></div>
-      </div>
-
-      <div class="text" style="margin-top: 5%;">
-              <h3>🍽️ Menu Highlights</h3>
-      <p> 🥮 Kuih(high-tea) • 🍕 Pizza • 🍖 BBQ </p>
-      </div>
-      
-      
-      <div class="text" style="margin-top: 5%;">
-              <h3>Parking</h3>
-      <p>Signs will be placed for guidance — please park by the roadside.</p>
-        </div>
-
-      <img src="assets/img/homestay.jpeg" alt="Homestay Image" class="homestay-img">
-
-
+  <body>
+    <div id="image-popup" class="popup-overlay1" onclick="closeImagePopup()">
+      <img id="popup-img" src="" alt="popup" />
     </div>
-  </section>
 
-  
-
-    <!-- Atur Cara -->
-  <section class="section" id="sec-agenda">
-    <div class="agenda-content-wrapper">
-    <div class="info">
-      
-      <div class="text">
-        <h2> 🕰️ Tentative Schedule</h2>
-      </div>
-    </div>
-    <ul>
-      <li><strong>5:30 PM</strong> Guest Arrival / Evening Tea</li>
-      <li><strong>6:15 PM</strong>  Arrival of the Bride & Groom 🦢</li>
-      <li><strong>6:30 PM</strong>  Icebreaking Game 🎲</li>
-      <li><strong>6:50 PM</strong>  Speech 🎤</li>
-      <li><strong>7:07 PM</strong> Maghrib / Open Buffet 🍽️</li>
-      <li><strong>8:30 PM</strong>  Saxophone Performance 🎷 / Dancefloor Opens 🕺</li>
-      <li><strong>9:00 PM</strong>  Karaoke Room Opens 🎤</li>
-      <li><strong>10:00 PM</strong> Bersurai</li>
-    </ul>
-    </div>
-  </section>
-
-
-  <div class="divider" aria-hidden="true">
-    <span class="note-pill" style="text-align: center;"> We can’t wait to celebrate this night with you! ✨ </span>
-  </div>
-
-</main>
-
-<!-- Vinyl Button -->
-<button type="button" class="vinyl" id="musicToggle"><img src="assets/img/vinyl.png" alt="vinyl record" /></button>
-
-<audio id="bgAudio" loop preload="auto">
-  <source src="/assets/bossa-nova.mp3" type="audio/mpeg">
-</audio>
-
-  <nav class="bottom-bar">
-    <button type="button" class="bottom-bar-item" data-modal-target="modal-contact-content">
-      <img src="/assets/icon/phone-call.webp" alt="Phone">
-      <span>Contact</span>
+    <audio id="bg-music" src="assets/audio/music.mp3" loop></audio>
+    <button id="music-btn" style="display: none;">
+      <img id="music-icon" src="assets/icons/music-sign.webp" alt="Music On" />
     </button>
-    <button type="button" class="bottom-bar-item" data-modal-target="modal-rsvp-content">
-      <img src="/assets/icon/mail.png" alt="RSVP">
-      <span>RSVP</span>
-    </button>
-    <button type="button" class="bottom-bar-item" data-modal-target="modal-location-content">
-      <img src="/assets/icon/location.png" alt="Location">
-      <span>Location</span>
-    </button>
-  </nav>
 
-  
-    <!-- Simple Modal Structure -->
-  
-  <!-- Hidden Modal Content Sources -->
-  <div id="modal-rsvp-content" style="display: none;">
-    <div class="popup-title-container">
-      <h2 class="popup-title"> RSVP 📝</h2>
-    </div>
-    <div class="info">
-      <div class="text">
-        
+    <main>
+      <div id="wrapper">
+        <div id="intro-screen" class="intro-screen">
+          <div class="intro-inner container">
+            <button id="enter-btn" class="animated-border" style="display: flex; flex-direction: column; align-items: center;">
+              <div style="font-family: 'GreatVibes'; text-align: center; margin-bottom: 8px;">
+                <p style="font-size: 1.5em; margin: 0; line-height: 1;">Syafiq</p>
+                <p style="font-size: 1.2em; margin: 0; line-height: 1;">&</p>
+                <p style="font-size: 1.5em; margin: 0; line-height: 1;">Rose</p>
+              </div>
+              <img src="assets/img/flower2.webp" alt="Love" style="width: 80px; height: auto;" />
+                <p style="font-style: 'Playfair';margin-top: 2px; font-size: 0.7em; margin: 0; line-height: 1;">TEKAN SINI</p>
+
+            </button>
+          </div>
+        </div>
+        <div id="main-content" style="display: none;">
+          
+          <section class="container">
+            <img src="assets/img/flower1.webp" class="custom-top-left-bg" >
+            <h2>Our <br> Nikah Celebration</h2><br><br>
+            <p style="font-family: 'GreatVibes', sans-serif; font-size: 4em; margin: 0; color: #000000;">Syafiq</p>
+            <p style="font-family: 'GreatVibes'; font-size: 2.5em;">&</p>
+            <p style="font-family: 'GreatVibes', sans-serif; font-size: 4em; margin: 0; color: #000000;">Rose</p><br><br>
+
+            <h3>Sabtu, 4 Oktober 2025</h3>
+            <p>12 Rabiulakhir 1447H</p><br>
+            <h3>Homestay Bukit Gasing</h3>
+            <h3>77, Jalan 5/49, Bukit Gasing,<br>
+              46000 Petaling Jaya, Selangor</h3>  
+
+            <img src="assets/img/flower5.webp" class="bottom-right-bg" >
+          </section>
+
+          <section class="container">
+            <h2>السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h2>
+            <p>Dengan penuh kesyukuran ke hadrat Allah S.W.T., kami,</p><br>
+
+            <p class="h3-main"><strong>Shukli bin Suban @ Ani</strong></p>
+            <p class="h3-main"><strong>Elfy Dayana binti Taib </strong></p>
+            <p>bersama</p>
+            <p class="h3-main"><strong>Shazman bin Abdul Halim</strong></p>
+            <p class="h3-main"><strong>Rosliza binti Janipan</strong></p><br>
+
+            <p>Dengan segala hormatnya kami menjemput dan mempersilakan</p>
+            <p>YBhg. Datuk/ Dato’/ Datin/ Tuan/ Puan/ Encik/ Cik</p>
+            <p>ke nikah celebration anakanda kami</p><br>
+
+            <h2>MUHAMMAD SYAFIQ BIN SHUKLI</h2>
+            <p style="font-family: 'GreatVibes'; font-size: 1em;">&</p>
+            <h2>ROSE AIDATUL AZITA BINTI SHAZMAN</h2><br>
+            <div class="container">
+              <img src="assets/img/flower3.webp" class="custom-bottom-left-bg" >
+            </div>
+            <h3>Sabtu, 4 October 2025</h3>
+            <h3>9:00am - 12:00pm</h3>
+
+            <h3>Homestay Bukit Gasing</h3>
+            <p> 77, Jalan 5/49, Bukit Gasing,<br>
+              46000 Petaling Jaya, Selangor
+            </p>
+            <button class="rsvp-btn rsvp-highlight" onclick="handleRSVPClick(this)">RSVP</button>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Nikah%20Celebration%20Syafiq%20dan%20Rose%20Aidatul&dates=20251004T010000Z/20251004T041500Z&details=Nikah%20Celebration%20di%20Homestay%20Bukit%20Gasing%2C%2077%2C%20Jalan%205%2F49%2C%20Bukit%20Gasing%2C%2046000%20Petaling%20Jaya%2C%20Selangor.&location=Homestay%20Bukit%20Gasing%2C%2077%2C%20Jalan%205%2F49%2C%20Bukit%20Gasing%2C%2046000%20Petaling%20Jaya%2C%20Selangor&sf=true&output=xml" target="_blank">
+              <button class="tarikh-btn">Simpan Tarikh</button>
+            </a>
+            <br><br><br>
+            <div class="carousel-wrapper">
+              <div class="carousel">
+                <img src="assets/img/homestay.jpeg" alt="Gambar 1" onclick="openImagePopup(this.src)" />
+              </div>
+            </div>
+          </section>
+
+          <section class="container" id="countdown-page">          
+            <h1>Menghitung Hari</h1>
+            <div class="countdown">
+              <div class="countdown-box">
+                <h2 id="days">50</h2>
+                <div class="countdown-label">Hari</div>
+              </div>
+              <div class="countdown-box">
+                <h2 id="hours">1</h2>
+                <div class="countdown-label">Jam</div>
+              </div>
+              <div class="countdown-box">
+                <h2 id="minutes">2</h2>
+                <div class="countdown-label">Minit</div>
+              </div>
+              <div class="countdown-box">
+                <h2 id="seconds">16</h2>
+                <div class="countdown-label">Saat</div>
+              </div>
+            </div>
+            <div style="display: flex; gap: 10px; justify-content: center; text-align: center;">
+              <div class="guest-count-label">
+                <h2 id="guest-count">--</h2>
+                Kehadiran
+              </div>
+              <div class="guest-count-label">
+                <h2 id="guest-count-no">--</h2>
+                Tidak Hadir
+              </div>
+            </div>
+          </section>
+
+          <section class="container" id="dress-code-section">
+            <h1>Dress Code</h1>
+            <p><strong>Gentlemen</strong>: Suit up <br>(avoid green)</p>
+            <p><strong>Ladies</strong>: Dress Glam <br>(avoid white)</p>
+            <br>
+            <h2>Color Palette</h2>
+            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+              <div style="width: 60px; height: 90px; background-color: #A48B69; border-radius: 5px;"></div>
+              <div style="width: 60px; height: 90px; background-color: #646E56; border-radius: 5px;"></div>
+              <div style="width: 60px; height: 90px; background-color: #B7502E; border-radius: 5px;"></div>
+              <div style="width: 60px; height: 90px; background-color: #8A5D3E; border-radius: 5px;"></div>
+              <div style="width: 60px; height: 90px; background-color: #1A311F; border-radius: 5px;"></div>
+              <div style="width: 60px; height: 90px; background-color: #632C28; border-radius: 5px;"></div>
+            </div>
+          </section>
+
+          <section class="shorter container">
+            <h1>Nikah Celebration Schedule</h1>
+            <div class="timeline-text">
+              <div class="timeline-row">
+                <div class="time">5:30 PM</div>
+                <div class="event">Guest Arrival / Evening Tea</div>
+              </div>
+              <div class="timeline-row">
+                <div class="time">6:15 PM</div>
+                <div class="event">Arrival of the Bride & Groom 🦢</div>
+              </div>
+              <div class="timeline-row">
+                <div class="time">6:30 PM</div>
+                <div class="event">Icebreaking Game 🎲</div>
+              </div>
+              <div class="timeline-row">
+                <div class="time">6:50 PM</div>
+                <div class="event">Speech 🎤</div>
+              </div>
+              <div class="timeline-row">
+                <div class="time">7:07 PM</div>
+                <div class="event">Maghrib / Open Buffet 🍽️</div>
+              </div>
+              <div class="timeline-row">
+                <div class="time">8:30 PM</div>
+                <div class="event">Saxophone Performance 🎷 / Dancefloor Opens 🕺</div>
+              </div>
+              <div class="timeline-row">
+                <div class="time">9:00 PM</div>
+                <div class="event">Karaoke Room Opens 🎤</div>
+              </div>
+              <div class="timeline-row">
+                <div class="time">10:00 PM</div>
+                <div class="event">Bersurai</div>
+              </div>
+            </div>
+            <img src="assets/img/flower2.webp" class="bottom-right-bg" >
+          </section>
+
+          <section>
+                        <p>We are truly excited to share this special evening with you. Your presence means the world to us. May this night be filled with love, blessings, and happiness.</p><br><br>
+          </section>
+        </div>
+
+        <section class="short container">
+          <h2>Ucapan</h2>
+          <div id="ucapan-list" class="ucapan-scroll"></div>
+          <button class="rsvp-btn rsvp-highlight" onclick="handleRSVPClick(this)">RSVP</button>
+          <img src="assets/img/flower4.webp" class="customm-bottom-left-bg" >
+        </section>
+        <br>
+
+        <div id="popup-overlay" class="popup-overlay" onclick="closePopup()"></div>
+
+        <section id="popup-contact" class="popup-section">
+          <button class="close" onclick="closePopup()">x</button>
+          <h2>Hubungi</h2>
+          <div style="display: flex; flex-direction: column; gap:10px; margin-top: 20px;">
+            <div class="contact-container">
+              <a href="https://wa.me/60193348600?text=Forwarded%20From%20E-Card%20*Syafiq*%20%26%20*Rose*%20*Aidatul*%20~" target="_blank" class="contact-link">
+                <div class="contact-box">
+                  <div>
+                    <strong>Shukli bin Suban @ Ani</strong><br />
+                    <span>(Bapa Pengantin Lelaki)</span>
+                  </div>
+                  <img src="assets/icons/whatsapp.webp" alt="WhatsApp" class="wa-icon" />
+                </div>
+              </a>
+            </div>
+            <div class="contact-container">
+              <a href="https://wa.me/60122818581?text=Forwarded%20From%20E-Card%20*Syafiq*%20%26%20*Rose*%20*Aidatul*%20~" target="_blank" class="contact-link">
+                <div class="contact-box">
+                  <div>
+                    <strong>Elfy Dayana binti Taib</strong><br />
+                    <span>(Ibu Pengantin Lelaki)</span>
+                  </div>
+                  <img src="assets/icons/whatsapp.webp" alt="WhatsApp" class="wa-icon" />
+                </div>
+              </a>
+            </div>
+            <div class="contact-container">
+              <a href="https://wa.me/601128000888?text=Forwarded%20From%20E-Card%20*Syafiq*%20%26%20*Rose*%20*Aidatul*%20~" target="_blank" class="contact-link">
+                <div class="contact-box">
+                  <div>
+                    <strong>Shazman bin Abdul Halim</strong><br />
+                    <span>(Bapa Pengantin Perempuan)</span>
+                  </div>
+                  <img src="assets/icons/whatsapp.webp" alt="WhatsApp" class="wa-icon" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="popup-rsvp" class="popup-section">
+          <button class="close" onclick="closePopup()">x</button>
+          <h2>RSVP</h2>
+
+          <div id="attendance-step" style="margin-top: 15%;">
+            <p style="color: black; align-self: center; font-size: 1em;">Will you be attending this nikah celebration?</p>
+            <button class="kehadiran" type="button" onclick="setAttendance('Hadir')">Ya</button>
+            <button class="kehadiran" type="button" onclick="setAttendance('Tidak Hadir')">Tidak</button>
+          </div>
+
+          <p id="rsvp-success" style="display:none; color: green; margin-top: 10px;">
+            TERIMA KASIH<br /> KEHADIRAN ANDA DINANTI
+          </p>
+
+          <form id="rsvp-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfcUVx97NWmPHWNdAH88ckcygxY2fnyps574RFfC_e8XpwApA/formResponse" method="POST" style="display:none;">
+            <input type="hidden" id="hadir-status" name="entry.1212652195" />
+
+            <p class="labell">Nama:</p>
+            <input type="text" id="name" name="entry.1440212509" placeholder="Nama anda" required />
+
+            <p class="labell">Bilangan Kehadiran:</p>
+            <select id="guest-amount" name="entry.1811924995" required>
+              <option value="" disabled selected>Pilih jumlah</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+
+            <p id="wordCount"><span class="labell">Ucapan:</span> (0 / 20 perkataan)</p>
+            <textarea id="speech" name="entry.1874381465" rows="4" placeholder="Tulis ucapan anda di sini"></textarea>
+            <script>
+              document.addEventListener('DOMContentLoaded', () => {
+                const textarea = document.getElementById('speech');
+                const counter  = document.getElementById('wordCount');
+
+                textarea.addEventListener('input', () => {
+                  let words = textarea.value.trim().split(/\s+/).filter(Boolean);
+                  if (words.length > 20) {
+                    words = words.slice(0, 20);
+                    textarea.value = words.join(' ');
+                  }
+                  counter.innerHTML = `<span class="labell">Ucapan:</span> (${words.length} / 20 perkataan)`;
+                });
+              });
+            </script>
+            <button class="hadir-submit" type="submit">Hantar</button>
+          </form>
+        </section>
+
+        <section id="popup-location" class="popup-section" style="text-align: center;">
+          <button class="close" onclick="closePopup()">x</button>
+          <h2>Lokasi</h2>
+          <div class="contact-container">
+            <p style="color:black;">
+              Homestay Bukit Gasing<br>
+              77, Jalan 5/49, Bukit Gasing,<br>
+              46000 Petaling Jaya, Selangor<br>
+            </p>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Homestay%20Bukit%20Gasing%2C%2077%2C%20Jalan%205%2F49%2C%20Bukit%20Gasing%2C%2046000%20Petaling%20Jaya%2C%20Selangor" target="_blank" class="contact-link">
+              <div class="contact-box">
+                <div>
+                  <strong>Google Maps</strong><br />
+                </div>
+                <img src="assets/icons/google-maps.webp" alt="Google Maps" class="wa-icon" />
+              </div>
+            </a>
+
+            <a href="https://waze.com/ul?q=Homestay%20Bukit%20Gasing%2C%2077%2C%20Jalan%205%2F49%2C%20Bukit%20Gasing%2C%2046000%20Petaling%20Jaya%2C%20Selangor" target="_blank" class="contact-link">
+              <div class="contact-box">
+                <div>
+                  <strong>Waze</strong><br />
+                </div>
+                <img src="assets/icons/waze.webp" alt="Waze" class="wa-icon" />
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="navigation">
+      <div class="nav-links">
+        <div onclick="toggleSection('contact')">
+          <img src="assets/icons/phone-call.webp" alt="Contact" class="nav-icon" />
+          <span>Hubungi</span>
+        </div>
+        <div onclick="toggleSection('rsvp')">
+          <img src="assets/icons/email.webp" alt="RSVP" class="nav-icon" />
+          <span>RSVP</span>
+        </div>
+        <div onclick="toggleSection('location')">
+          <img src="assets/icons/location.webp" alt="Location" class="nav-icon" />
+          <span>Lokasi</span>
+        </div>
+      </div>
+    </footer>
+    <div id="confirm-popup" class="confirm-popup">
+      <p id="confirm-message"></p>
+      <div class="popup-buttons">
+        <button onclick="handleConfirm(true)">Ok</button>
+        <button onclick="handleConfirm(false)">Cancel</button>
       </div>
     </div>
-
-<form id="rsvp-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfcUVx97NWmPHWNdAH88ckcygxY2fnyps574RFfC_e8XpwApA/formResponse" method="POST">
-  <!-- Step 1: Yes/No -->
-  <div id="rsvp-initial-step">
-    <label for="hadir">Will you be attending?</label>
-    <div id="rsvp-buttons">
-      <button type="button" id="rsvp-yes" class="btn">Yes</button>
-      <button type="button" id="rsvp-no" class="btn">No</button>
-    </div>
-  </div>
-
-  <!-- Step 2: Details -->
-  <div id="rsvp-details-step" style="display: none;">
-    <!-- Hidden select for Ya/Tidak -->
-    <select id="hadir" name="entry.1212652195" required style="display:none;">
-      <option value=""></option>
-      <option value="Ya">Yes</option>
-      <option value="Tidak">No</option>
-    </select>
-
-    <div class="form-group">
-      <label for="nama">Name:</label>
-      <input type="text" id="nama" name="entry.1440212509" placeholder="Your Name" required>
-    </div>
-
-    <div class="form-group" id="bilangan-kehadiran-group">
-      <label for="bilangan">Number of Attendees:</label>
-      <input type="number" id="bilangan" name="entry.1811924995" min="0" max="10" placeholder="Type amount" required>
-    </div>
-
-    
-
-    <button type="submit" class="btn rsvp-submit-btn">Send</button>
-  </div>
-</form>
-
-<!-- Success message -->
-<div id="rsvp-success" style="display:none; text-align:center; margin-top:20px; padding:10px; background:#e6ffe6; border:1px solid #a3e6a3; border-radius:5px;">
-  Thank you for your RSVP!
-</div>
-
-  </div>
-
-  <div id="modal-contact-content" style="display: none;">
-    <div class="popup-title-container">
-      <h2 class="popup-title"> Contact 📞</h2>
-    </div>
-    <div class="info">
-      <div class="text">
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-      <div>
-        <p style="margin: 0;"><strong>Shukli bin Suban @ Ani</strong></p>
-        <p style="margin: 0; font-size: 0.9em; color: #555;">Bapa Pengantin Lelaki</p>
-      </div>
-      <div>
-        <a href="https://wa.me/660123456789" target="_blank"><img src="/assets/icon/whatsapp.png" alt="WhatsApp" style="width: 32px; height: 32px;"></a>
-      </div>
-    </div>
-    <div class="contact-entry-bordered" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-      <div>
-        <p style="margin: 0;"><strong>Elfy Dayana binti Taib</strong></p>
-        <p style="margin: 0; font-size: 0.9em; color: #555;">Ibu Pengantin Lelaki</p>
-      </div>
-      <div>
-        <a href="https://wa.me/660123456789" target="_blank"><img src="/assets/icon/whatsapp.png" alt="WhatsApp" style="width: 32px; height: 32px;"></a>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-      <div>
-        <p style="margin: 0;"><strong>Shazman bin Abdul Halim</strong></p>
-        <p style="margin: 0; font-size: 0.9em; color: #555;">Bapa Pengantin Perempuan</p>
-      </div>
-      <div>
-        <a href="https://wa.me/660123456789" target="_blank"><img src="/assets/icon/whatsapp.png" alt="WhatsApp" style="width: 32px; height: 32px;"></a>
-      </div>
-    </div>
-  </div>
-
-  <div id="modal-location-content" style="display: none;">
-    <div class="popup-title-container">
-      <h2 class="popup-title"> Location 📍</h2>
-    </div>
-    <div class="info" style="align-items: center; text-align: center;">
-      <div class="text" style="text-align: center;">
-        <p>Homestay Bukit Gasing<br>77, Jalan 5/49, Bukit Gasing,<br>46000 Petaling Jaya, Selangor</p>
-      </div>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 10px;">
-      <a href="https://www.google.com/maps?q=Homestay+Bukit+Gasing,the+77,+Jalan+5/49,+Bukit+Gasing,+46000+Petaling+Jaya,+Selangor" target="_blank" class="btn">Google Maps</a>  
-      <a href="https://waze.com/ul?q=Homestay+Bukit+Gasing,+77,+Jalan+5/49,+Bukit+Gasing,+46000+Petaling+Jaya,+Selangor" target="_blank" class="btn">Waze</a>
-    </div>
-  </div>
-
-  <!-- Simple Modal Structure -->
-  <div id="simpleModal" class="simple-modal">
-    <div class="simple-modal-content">
-      <span class="simple-close-button">&times;</span>
-      <div id="modalContent"></div>
-    </div>
-  </div>
-  <script src="main.js"></script>
-</body>
+  </body>
 </html>

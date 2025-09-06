@@ -1,0 +1,83 @@
+:root {
+  --color-primary: #e0e0e0; /* Softer white for text */
+  --color-secondary: #1a1a1a; /* Very dark grey for background */
+  --color-button: #1a1a1a; /* Very dark grey for buttons */
+  --color-border: #e0e0e0; /* Softer white for borders */
+  --color-element-bg: #1a1a1a; /* Very dark grey for element background */
+  --color-text: #e0e0e0; /* Softer white for general text */
+  --color-button-text: #e0e0e0; /* Softer white for button text */
+  --color-button-bg: #1a1a1a; /* Very dark grey for button background */
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+.labell,
+.countdown-label,
+#guest-count,
+#guest-count-no,
+.guest-count-label,
+.time,
+.event,
+.timeline-text,
+.contact-link,
+.ucapan-scroll p,
+.popup-section form,
+form input,
+form select,
+form textarea {
+  color: var(--color-primary) !important;
+}
+
+*,
+*:before,
+*:after {
+  border-color: var(--color-border) !important;
+}
+
+body,
+section,
+.popup-section,
+.contact-box,
+.countdown-box,
+.kehadiran,
+.animated-border,
+.carousel-wrapper,
+.ucapan-scroll,
+.timeline-row,
+.timeline li,
+.confirm-popup,
+input,
+textarea,
+select,
+button,
+.map-btn,
+#enter-btn,
+.popup-buttons button,
+#navigation {
+  background-color: var(--color-secondary) !important;
+}
+
+button,
+.map-btn,
+.kehadiran,
+.popup-buttons button {
+  background-color: var(--color-button) !important;
+  color: var(--color-button-text) !important;
+}
+
+.tarikh-btn {
+  background-color: var(--color-button-text) !important;
+  color: var(--color-button) !important;
+}
+
+.nav-icon,
+.wa-icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%); /* Invert icons for dark mode */
+}
+
+#music-icon {
+  filter: invert(100%); /* Make music icon white */
+}
