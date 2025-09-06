@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = e.target;
     const data = new FormData(form);
 
-    fetch("https://docs.google.com/forms/d/e/1FAIpQLScYmTT-ntuk8TZUI3rNcMcHq1i0yESAZFoBAGAXtfI5ISyGNg/formResponse", {
+    fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSfcUVx97NWmPHWNdAH88ckcygxY2fnyps574RFfC_e8XpwApA/formResponse", {
       method: "POST",
       mode: "no-cors",
       body: data,
