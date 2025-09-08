@@ -206,16 +206,18 @@ btn.addEventListener("click", () => {
   }
 });
 
-const textarea = document.getElementById('speech');
-const wordCountDisplay = document.getElementById('wordCount');
+document.addEventListener('DOMContentLoaded', () => {
+  const textarea = document.getElementById('speech');
+  const wordCountDisplay = document.getElementById('wordCount');
 
-textarea.addEventListener('input', function() {
-  let words = this.value.trim().split(/\s+/).filter(Boolean);
-  if (words.length > 20) {
-    words = words.slice(0, 20);
-    this.value = words.join(' ');
-  }
-  wordCountDisplay.textContent = `Ucapan: (${words.length} / 20 perkataan)`;
+  textarea.addEventListener('input', function() {
+    let words = this.value.trim().split(/\s+/).filter(Boolean);
+    if (words.length > 20) {
+      words = words.slice(0, 20);
+      this.value = words.join(' ');
+    }
+    wordCountDisplay.textContent = `Ucapan: (${words.length} / 20 perkataan)`;
+  });
 });
 
 function openImagePopup(src) {
